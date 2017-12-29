@@ -1,4 +1,4 @@
-{% set version = '6.0-77' %}
+{% set version = '6.0-78' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/caret_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/caret/caret_{{ version }}.tar.gz
-  sha256: beec200e18a0bbcefa6ba0380b50bea2faf535ac66c4e7febd56e8630a018515
+  sha256: dea8799853b9b0843d994b4dad09d1535547f36752ff70a956004111e3ef3640
 
 
   # patches:
@@ -86,7 +86,7 @@ extra:
 # The original CRAN metadata for this package was:
 
 # Package: caret
-# Version: 6.0-77
+# Version: 6.0-78
 # Title: Classification and Regression Training
 # Author: Max Kuhn. Contributions from Jed Wing, Steve Weston, Andre Williams, Chris Keefer, Allan Engelhardt, Tony Cooper, Zachary Mayer, Brenton Kenkel, the R Core Team, Michael Benesty, Reynald Lescarbeau, Andrew Ziem, Luca Scrucca, Yuan Tang, Can Candan, and Tyler Hunt.
 # Description: Misc functions for training and plotting classification and regression models.
@@ -99,9 +99,9 @@ extra:
 # License: GPL (>= 2)
 # RoxygenNote: 6.0.1
 # NeedsCompilation: yes
-# Packaged: 2017-09-01 14:30:16 UTC; max
+# Packaged: 2017-11-28 20:04:04 UTC; max
 # Repository: CRAN
-# Date/Publication: 2017-09-07 21:15:33 UTC
+# Date/Publication: 2017-12-10 20:28:28 UTC
 
 # See
 # http://docs.continuum.io/conda/build.html for
