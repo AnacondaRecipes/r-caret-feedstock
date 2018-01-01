@@ -23,6 +23,7 @@ build:
   # If this is a new build for the same version, increment the build number.
   number: 0
 
+
   # This is required to make R link correctly on Linux.
   rpaths:
     - lib/R/lib/
@@ -31,11 +32,13 @@ build:
 # Suggests: BradleyTerry2, e1071, earth (>= 2.2-3), fastICA, gam, ipred, kernlab, klaR, MASS, ellipse, mda, mgcv, mlbench, MLmetrics, nnet, party (>= 0.9-99992), pls, pROC, proxy, randomForest, RANN, spls, subselect, pamr, superpc, Cubist, testthat (>= 0.9.1)
 requirements:
   build:
-    - r-base
     - {{ compiler('c') }}        # [not win]
     - {{native}}toolchain        # [win]
     - {{posix}}filesystem        # [win]
     - {{posix}}make
+
+  host:
+    - r-base
     - r-modelmetrics >=1.1.0
     - r-foreach
     - r-ggplot2
